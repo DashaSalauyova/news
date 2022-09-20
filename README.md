@@ -1,3 +1,3 @@
-This pluguin is my first tentative to create a plugin statistics.
-C:\xampp\htdocs\glpi_old\plugins\news\front\table_statistic.php
+## This pluguin is my first tentative to create a plugin statistics.
+...glpi_old\plugins\news\front\table_statistic.php
 In this file I try to do the differents requests in DB to create my customized statisctics AS Priority, Performance, Tendance... 
