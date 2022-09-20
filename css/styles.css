@@ -1,0 +1,157 @@
+/*!
+ * -------------------------------------------------------------------------
+ * News plugin for GLPI
+ * -------------------------------------------------------------------------
+ *
+ * LICENSE
+ *
+ * This file is part of News.
+ *
+ * News is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * News is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with News. If not, see <http://www.gnu.org/licenses/>.
+ * -------------------------------------------------------------------------
+ * @copyright Copyright (C) 2015-2022 by News plugin team.
+ * @license   GPLv2 https://www.gnu.org/licenses/gpl-2.0.html
+ * @link      https://github.com/pluginsGLPI/news
+ * -------------------------------------------------------------------------
+ */
+ .plugin_news_alert .alert-dismissible {
+   margin-bottom: 1rem;
+}
+.plugin_news_alert-container {
+   margin-bottom: 1rem;
+}
+
+.plugin_news_alert {
+   display: flex;
+   justify-content: center;
+   align-items : center;
+   margin: auto;
+   border: none;
+   position: relative;
+   padding: 2px auto auto 2px;
+}
+
+.plugin_news_alert h3 {
+    position: relative;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.plugin_news_alert-login {
+   margin-bottom: 40px;
+}
+
+.plugin_news_alert-login .plugin_news_alert-content {
+   max-height: 0;
+   padding: 0;
+   overflow: hidden;
+   transition: max-height .25s ease-out;
+   transition: padding .25s ease-out;
+}
+.plugin_news_alert-login .expanded .plugin_news_alert-content {
+   padding: 5px 15px;
+   max-height: 300px;
+   overflow-y: auto;
+   transition: max-height .25s ease-in;
+   transition: padding .25s ease-in;
+}
+
+.plugin_news_alert-toggle {
+   background-image: url(../pics/toggle_down.png);
+   width: 16px;
+   height: 16px;
+   cursor: pointer;
+   opacity: .5;
+   position: absolute;
+   top: 3px;
+   right: 0;
+   opacity: .5;
+}
+.expanded .plugin_news_alert-toggle {
+   background-image: url(../pics/toggle_up.png);
+}
+
+.plugin_news_alert-visibility {
+   margin: 0 auto;
+}
+
+.plugin_news_alert-container:empty {
+   display: none;
+}
+
+
+/* TWO BLOCS INCIDENTS AND REQUESTS */
+
+.flex {
+   display: flex;
+   justify-content: center;
+   align-items : center;
+}
+
+.first {
+   margin: 50px;
+   width: 150px; height: 100px;
+   background-color: #006573;
+   color: whitesmoke;
+   display : flex;
+   text-align : center;
+   justify-content : center;
+   align-items : center;
+   font-size: x-large;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.second {
+   width: 150px; height: 100px; 
+   background-color: #8fd2c7;
+   color: whitesmoke;
+   display : flex;
+   text-align : center;
+   justify-content : center;
+   align-items : center;
+   font-size: x-large;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Photo de requetes generale */
+.table {
+   background-color: transparent;
+   font-style: normal;
+   max-width: 86%;
+}
+
+h1 {
+   margin-left: 100px;
+   margin-top: 100px;
+   font-size: x-large;
+   color: #006573;
+   /* font-family: monospace; */
+}
+
+
+
+h3 {
+   padding-right: 100px;
+   max-width: 90%;
+   color: #003E52;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#table, #table2, #table3 {
+   margin-top: 10vh;
+   margin-left: 10vw;
+}
